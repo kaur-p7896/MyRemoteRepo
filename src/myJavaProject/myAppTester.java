@@ -17,7 +17,8 @@ public class myAppTester {
 	  reverseMethod(n);
 	  System.out.println();
 
-	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
+	  System.out.print("Factorial of the input number is:");
+	  System.out.print(factorial(n));  
 
 	}
 	
@@ -34,14 +35,13 @@ public class myAppTester {
 	   }
 
 
-	   /* 
-	       add your test method in this space then remove the block comment symbols
-	       public static void myTestMethod(...){
-
-            
-
-		   }
-	 
-	   */
+	public static int factorial(int num)
+	{
+	 if(num>=1)
+		 return num*factorial(num-1);
+	 else
+		 return 1;
+	}
+	   
 
 }
