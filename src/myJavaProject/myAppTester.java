@@ -16,8 +16,10 @@ public class myAppTester {
 	  System.out.print("Reverse of the input number is:");
 	  reverseMethod(n);
 	  System.out.println();
+	  System.out.print("Enter the input number to check if it is perfect number or not:");
+	  perfect(n);
 
-	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
+	    
 
 	}
 	
@@ -33,15 +35,28 @@ public class myAppTester {
 	       }
 	   }
 
-
-	   /* 
-	       add your test method in this space then remove the block comment symbols
-	       public static void myTestMethod(...){
-
+	public static void perfect(int num) 
+	{
+		for(int i=1;i<1000;i++)
+		{
+			int sum=0;
+		 
+		  
+			if(i%num==0)
+			{
+				sum=sum+num;
+				
+			
+		}
+		 if(sum==num)
+			 System.out.println(num+" perfect");
+		 else
+			 System.out.println("not");
+	}
+	  
             
 
 		   }
 	 
-	   */
 
 }
